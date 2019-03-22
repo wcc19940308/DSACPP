@@ -22,6 +22,7 @@ template <typename T> struct BinNode { //二叉树节点模板类
 // 构造函数
    BinNode() :
       parent ( NULL ), lc ( NULL ), rc ( NULL ), height ( 0 ), npl ( 1 ), color ( RB_RED ) { }
+   // 默认创建红节点
    BinNode ( T e, BinNodePosi(T) p = NULL, BinNodePosi(T) lc = NULL, BinNodePosi(T) rc = NULL,
              int h = 0, int l = 1, RBColor c = RB_RED ) :
       data ( e ), parent ( p ), lc ( lc ), rc ( rc ), height ( h ), npl ( l ), color ( c ) { }
